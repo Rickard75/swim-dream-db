@@ -1,0 +1,62 @@
+# ========================
+# Credenziali e configurazioni locali
+# ========================
+.env
+*.env
+.env.*
+
+# ========================
+# Python
+# ========================
+__pycache__/
+*.py[cod]
+*.pyo
+venv/
+.venv/
+env/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+
+# ========================
+# Jupyter Notebook
+# ========================
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# ========================
+# Database
+# ========================
+*.sql~
+*.dump
+*.backup
+
+# ========================
+# Sistema operativo
+# ========================
+.DS_Store           # Mac
+Thumbs.db           # Windows
+desktop.ini         # Windows
+*~                  # file temporanei Linux
+
+# ========================
+# VSCode
+# ========================
+.vscode/settings.json
+.vscode/launch.json
+
+# ========================
+# Log
+# ========================
+*.log
+log.txt
+logs/
+
+# ========================
+# Dati sensibili o pesanti
+# ========================
+data/raw/
+*.csv
+*.xlsx
