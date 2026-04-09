@@ -55,3 +55,16 @@ Il tuo computer (localhost)
 ### [SQL] Creare un db
 - usando il terminale: `psql -U postgres -c "CREATE DATABASE swimming_db ENCODING 'UTF8';"`
 - da GUI: `Database`>`Create`
+
+## `2026-04-09`
+### [GIT] Using versioning with a team
+- `git log --oneline --graph`
+- per una modifica creo il mio branch: `git branch bugfix/duplicated_entries`
+- carico il branch sull'internet: `git push --set-upstream origin bugfix/duplicated_entries`
+- mi sposto nel branch `git checkout bugfix/duplicated_entries`
+- edito qui il codice
+- `git diff` mi mostra la differenza con quanto c'è nell'ultimo commit
+- faccio un `git add .`, poi il `git commit -m "bugfix: deleted duplicated entry of dyn_thr_m"` e quindi il `git push` nel branch di feature **locale**
+- `git switch development` unisco le storie dei branch
+- `git merge bugfix/duplicated_entries` unisco le storie dei branch e poi `git push` fa il push nell'origin perch
+
