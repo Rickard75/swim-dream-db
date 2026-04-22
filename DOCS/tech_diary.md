@@ -66,5 +66,10 @@ Il tuo computer (localhost)
 - `git diff` mi mostra la differenza con quanto c'è nell'ultimo commit
 - faccio un `git add .`, poi il `git commit -m "bugfix: deleted duplicated entry of dyn_thr_m"` e quindi il `git push` nel branch di feature **locale**
 - `git switch development` unisco le storie dei branch
-- `git merge bugfix/duplicated_entries` unisco le storie dei branch e poi `git push` fa il push nell'origin perch
+- `git merge bugfix/duplicated_entries` unisco le storie dei branch e poi `git push` fa il push nell'origin
+
+## `2026-04-22`
+- `git stash` permette di salvare le modifiche e metterla da parte quando sto cambiando branch con un `git switch <nome_branch>`
+- 
+
 
