@@ -213,21 +213,22 @@ CREATE TABLE brevetto (
     data_conseguimento DATE,
     ente_certificatore VARCHAR(100) -- FIN, FIPSAS, etc
 );
-
+```
 
 
 ### RICK
 Per stare bene in acqua l'**ALLIEVO** necessita di raggiungere un **RISULTATO** in una **DISCIPLINA** tra quelle acquatiche. Per ottenerlo è fondamentale l'**ISTRUTTORE** che lo segue in **PISCINA**, dotata di **RECENSIONE** sulla cui base si può valutare il best fit. L'allievo alla fine otterrà il **BREVETTO** attraverso la frequenza del **CORSO** e lo svolgimento della **PROGRESSIONE_DIDATTICA** proposta tramite una sequenza multilaterale di diverse tipologie di **ESERCIZIO** utilizzati per apprendere la tecnica dello **STILE** di interesse. L'**ALLENAMENTO** consiste in tre **SEZIONI** - in genere riscaldamento, lavoro centrale e defaticamento - composte da un numero variabile di **SERIE** 
 
+**ITALIANO**
 ```
 PostgreSQL
-├── allievo (nome, età, frequenza, livello_partenza, livello_obiettivo, record, note)
+├── allievo (nome, età, weekly_freq, livello_partenza, livello_obiettivo, record, note)
 ├── risulato (categoria, gara, tempo, atleta, data, vasca)
 ├── disciplina (nome, prerequisiti, elementi_tecnici_specifici)
 ├── istruttore (nome, età, qualifiche, anni_esperienza, orario disponibilità, filosofia)
 ├── piscina (nome, città, corsie, vasca, spogliatoio, doccia, segreteria, tariffe)
 ├── recensione (piscina, voto, testo, data)
-├── brevetto (obiettivi_didattici)
+├── brevetto (nome, alias, obiettivi_didattici)
 ├── corso (livello, allievi, orario, obiettivi, durata)
 ├── progressione_didattica (prerequisiti, esercizi, obiettivo)
 ├── esercizio (disciplina, stile_principale, gambe, braccia, descrizione)
@@ -235,6 +236,25 @@ PostgreSQL
 ├── allenamento (tipologia_tecnica, distanza_allenamento, data, obiettivo)
 ├── sezione (nome, serie, distanza_sezione)
 ├── serie (ripetizioni, distanza_serie, tempo, attrezzatura) 
+```
+
+**ENGLISH**
+```
+PostgreSQL
+├── student (name, age, weekly_frequency, starting_level, target_level, record, notes)
+├── result (category, competition, time, athlete, date, pool_length)
+├── discipline (name, prerequisites, specific_technical_elements)
+├── instructor (name, age, qualifications, years_experience, availability_schedule, philosophy)
+├── swimming_pool (name, city, lanes, pool_type, changing_room, shower, reception, pricing)
+├── review (swimming_pool, rating, text, date)
+├── certification (name, legacy_name, learning_objectives)
+├── course (level, students, schedule, objectives, duration)
+├── training_progression (prerequisites, exercises, objective)
+├── exercise (discipline, main_stroke, legs, arms, description)
+├── stroke (name, description, training_progression)
+├── training (technical_type, training_distance, date, objective)
+├── section (name, sets, section_distance)
+├── set (repetitions, set_distance, time, equipment)
 ```
 ## STRUTTURA REPOSITORY (Claudia tip)
 Struttura consigliata

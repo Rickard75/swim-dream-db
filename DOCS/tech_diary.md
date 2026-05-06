@@ -13,6 +13,7 @@ Autore: `Riccardo`
 
 ## DIARIO
 - `2026-04-06`: come scopiazzare roba da github; una volta c'erano le macchine da scrivere; comandi strani da shell-vellarsi; vedere i commit al volo 
+- `2026-04-22`: leggere stato e staging in Git; togliere file dallo stage; ripristinare modifiche; rinominare branch locale e remoto
 
 
 ## `2026-04-06`
@@ -69,7 +70,20 @@ Il tuo computer (localhost)
 - `git merge bugfix/duplicated_entries` unisco le storie dei branch e poi `git push` fa il push nell'origin
 
 ## `2026-04-22`
-- `git stash` permette di salvare le modifiche e metterla da parte quando sto cambiando branch con un `git switch <nome_branch>`
-- 
+### [GIT] Stato repo e staging
+- `git status` mostra branch corrente, stato sincronizzazione con origin e file staged/unstaged
+- `git diff --staged` mostra cosa finirà nel prossimo commit
+- `git restore --staged DOCS/db_architecture.md` toglie il file dallo stage ma mantiene le modifiche nel working tree
+- `git restore DOCS/db_architecture.md` annulla le modifiche locali al file
+
+### [GIT] Branching: rinominare un branch
+- `git branch -m feature/tables` rinomina il branch corrente (comando usato in pratica)
+- `git branch -m vecchio_nome nuovo_nome` rinomina un branch specifico non necessariamente checkoutato
+- `git push origin -u nuovo_nome` pubblica il nuovo branch e imposta l'upstream
+- `git push origin --delete vecchio_nome` elimina il vecchio nome branch dal remote
+- `git fetch -p` pulisce i riferimenti remoti non piu esistenti
+
+### [GIT] Mettere da parte il lavoro temporaneamente
+- `git stash` salva modifiche non committate per poter cambiare branch in sicurezza con `git switch <nome_branch>`
 
 
