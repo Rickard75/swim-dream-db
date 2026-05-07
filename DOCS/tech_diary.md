@@ -14,6 +14,7 @@ Autore: `Riccardo`
 ## DIARIO
 - `2026-04-06`: come scopiazzare roba da github; una volta c'erano le macchine da scrivere; comandi strani da shell-vellarsi; vedere i commit al volo 
 - `2026-04-22`: leggere stato e staging in Git; togliere file dallo stage; ripristinare modifiche; rinominare branch locale e remoto
+- `2026-05-07`: creato un ambiente virtuale con uv e installati i pacchetti del progetto in modo isolato; preparazione al file pyproject.toml
 
 
 ## `2026-04-06`
