@@ -15,6 +15,7 @@ Autore: `Riccardo`
 - `2026-04-06`: come scopiazzare roba da github; una volta c'erano le macchine da scrivere; comandi strani da shell-vellarsi; vedere i commit al volo 
 - `2026-04-22`: leggere stato e staging in Git; togliere file dallo stage; ripristinare modifiche; rinominare branch locale e remoto
 - `2026-05-07`: creato un ambiente virtuale con uv e installati i pacchetti del progetto in modo isolato; preparazione al file pyproject.toml
+- `2026-05-07`: logger configurato con nome, file, linea e funzione nel notebook sandbox; eseguito psql da terminale con parametri CLI per creare la tabella locale
 
 
 ## `2026-04-06`
@@ -86,5 +87,15 @@ Il tuo computer (localhost)
 
 ### [GIT] Mettere da parte il lavoro temporaneamente
 - `git stash` salva modifiche non committate per poter cambiare branch in sicurezza con `git switch <nome_branch>`
+
+## `2026-05-07`
+### [PYTHON] Logger più utile nei notebook
+- nel `logging.basicConfig()` ho aggiunto `name`, `filename`, `lineno` e `funcName` per capire da dove parte il messaggio
+- nei notebook il nome file può essere temporaneo, quindi il logger aiuta più del solo messaggio testuale
+
+### [SQL] Creare tabelle da terminale con psql
+- `psql` non legge da solo il file `.env`, quindi ho passato host, porta, utente e database da CLI
+- in PowerShell il comando esterno va richiamato con `&` davanti al percorso completo di `psql.exe`
+- la password si può passare con `PGPASSWORD` oppure inserire con `-W`
 
 

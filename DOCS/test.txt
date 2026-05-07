@@ -1,4 +1,5 @@
-Hi
-I'm in Innsbruck Universität 
-Ich bin ein Physics Student
-Ich lehre Deutsche aber Ich nur kenne ein bisschen diese nicht einfach Länge
+1 - Hi
+2 - I'm in Innsbruck Universität 
+3 - Ich bin ein Physics Student
+4 - Ich lehre Deutsche aber Ich nur kenne ein bisschen diese nicht einfach Länge
+5 - Ich arbeite in eine Grun technologie Firm, es macht Meissonden 
