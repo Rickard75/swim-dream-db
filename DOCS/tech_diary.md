@@ -15,7 +15,7 @@ Autore: `Riccardo`
 - `2026-04-06`: come scopiazzare roba da github; una volta c'erano le macchine da scrivere; comandi strani da shell-vellarsi; vedere i commit al volo 
 - `2026-04-22`: leggere stato e staging in Git; togliere file dallo stage; ripristinare modifiche; rinominare branch locale e remoto
 - `2026-05-07`: creato un ambiente virtuale con uv e installati i pacchetti del progetto in modo isolato; preparazione al file pyproject.toml
-- `2026-05-07`: logger configurato con nome, file, linea e funzione nel notebook sandbox; eseguito psql da terminale con parametri CLI per creare la tabella locale
+- `2026-05-07`: logger configurato con nome, file, linea e funzione nel notebook sandbox; eseguito psql da terminale con parametri CLI per creare la tabella locale; **(.swim_env)** *PS C:\Users\Asus\Desktop\DATA SCIENCE\03_PROJECTS\swim-dream-db>* `& "C:\Program Files\PostgreSQL\18\bin\psql.exe" -h localhost -p 5432 -U postgres -d swimming_db -f .\schema\<name_of_SQL_file_to_execute>.sql`
 
 
 ## `2026-04-06`
