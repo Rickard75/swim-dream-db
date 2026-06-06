@@ -99,3 +99,20 @@ Il tuo computer (localhost)
 - la password si può passare con `PGPASSWORD` oppure inserire con `-W`
 
 
+## `2026-06-06`
+### Storia di SQL
+- Sequential Master Udpate (1970s) era lo standard prima di SQL, in sostanza un nastro magnetico dove erano immagazzinati i dati. La velocità di accesso, modifica e lettura era proporzionale alla distanza dal nastro per accedervi.
+- Quindi l'avvento degli hard disk ha permesso un accesso casuale con stessa velocità per qualsiasi dato da intercettare.
+- Quindi SQL è diventato lo standard insieme al NIST dopo che ogni azienda stava cercando il modo migliore per organizzare i dati.
+- `CRUD` è l'acronimo che sta per Create, Read, Update, Delete e riassume tutte le funzioni di un linguaggio di tipo SQL:
+  - PostgresSQL, 100% open source
+  - NoSQL, 
+  - MySQL, fast and scalable now bought from Oracle
+  - Oracle, large commercial enterprise-scale
+  - SqlServer, from Microsoft 
+  - MongoDB
+- The concepts are:
+  - database: a set of tables organized into a network
+  - relation: a set of correlations expressed into a matrix with tuples and attributes (table)
+  - tuple: a set of fields which builds an item/object (row)
+  - attribute: each field of a tuple (column)
